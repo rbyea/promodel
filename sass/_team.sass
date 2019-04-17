@@ -1,0 +1,143 @@
+.team 
+  &__text
+    display: block
+    background-color: $primery-color
+    font-size: 20px
+    +regular
+  &__title
+    margin-top: 20px
+    margin-bottom: 20px
+    font-size: 50px
+    text-align: center
+    +bold
+  &__picture
+    &-image 
+      display: block
+      width: 700px
+      margin: auto
+  &__photo
+    &-image
+      display: block
+      width: 280px
+      height: 400px
+    &-img
+      display: block
+      width: 470px
+      height: 400px
+      margin-left: 30px
+  &__album  
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-top: 50px
+  &__item 
+    flex-basis: 30%
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__description  
+    text-align: center
+    margin-top: 10px
+    margin-bottom: 50px
+  &__link
+    display: block
+    text-decoration: none
+    text-transform: none
+    color: $background-color
+    padding: 15px 10px 10px 10px
+    background-color: $primery-color
+    border-radius: 5px
+    width: 190px
+    height: 30px
+    text-align: center
+    margin: 0 auto
+  &__span
+    position: absolute
+    top: 8%
+    left: 10px
+    font-size: 30px
+.button 
+  position: relative
+  text-decoration: none
+  color: #fff
+  &:before 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 1.5em
+    height: 100%
+    background-color: rgba(#fff, 0.6)
+    transform: translateX(-4em) skewX(-45deg)
+    animation: move-light 3s infinite
+@keyframes move-light
+  from 
+    transform: translateX(-4em) skewX(-45deg)
+  to 
+    transform: translateX(20em) skewX(-45deg)
+@media (max-width: 992px)
+  .team
+    &__item
+      margin-left: 30px
+    &__title
+      font-size: 35px
+@media (max-width: 735px)
+  .team
+    &__picture
+      &-image
+        max-width: 100%
+@media (max-width: 663px)
+  .team
+    &__photo
+      &-img
+        width: 390px
+        height: 344px
+@media (max-width: 595px)
+  .team 
+    &__title
+      font-size: 30px
+@media (max-width: 555px)
+  .team
+    &__photo
+      &-img
+        width: 315px
+        height: 295px
+@media (max-width: 436px)
+  .team
+    &__picture
+      display: none
+@media (max-width: 415px)
+  .team
+    &__photo
+      &-img
+        margin-left: 0
+    &__album
+      justify-content: flex-start
+      flex-direction: column
+@media (max-width: 382px)
+  .team
+    &__photo
+      &-image
+        width: 250px
+        height: 340px
+      &-img
+        width: 290px
+        height: 275px
+    &__title
+      margin-top: 0
+      margin-bottom: 0
+    &__item
+      margin-left: 0
+      width: 90%
+      margin: auto
+@media (max-width: 330px)
+  .team
+    &__photo
+      &-img
+        width: 245px
+        height: 230px
+      &-image
+        width: 225px
+        height: 305px
+    &__title
+      font-size: 25px

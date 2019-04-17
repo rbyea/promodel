@@ -1,0 +1,40 @@
+.about
+  &__text 
+    display: block
+    background-color: $primery-color
+    font-size: 20px
+    +regular
+  &__title  
+    margin-top: 20px
+    margin-bottom: 20px
+    font-size: 50px
+    +bold
+  &__company  
+    font-size: 20px
+    +regular
+  &__link 
+    display: block
+    text-decoration: none
+    text-transform: none
+    color: $background-color
+    padding: 15px 15px 10px 15px
+    background-color: $primery-color
+    border-radius: 5px
+    width: 190px
+    height: 30px
+    text-align: center
+    margin: 0 auto
+@media (max-width: 905px)
+  .about
+    &__title
+      font-size: 35px
+@media (max-width: 700px)
+  .about
+    &__title
+      text-align: center
+@media (max-width: 445px)
+  .about
+    &__title
+      font-size: 28px
+    &__company
+      font-size: 17px
