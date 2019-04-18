@@ -1,0 +1,42 @@
+.header
+	position: relative
+	&-video
+		z-index: 1
+	&-content
+		position: absolute
+		display: flex
+		justify-content: space-between
+		align-items: center
+		z-index: 2
+		width: 1170px
+		&__text
+			font-size: 17px
+	&-navbar
+		position: absolute
+		z-index: 2
+		ul
+			display: flex
+			margin: 0
+			padding: 0
+			li
+				padding-left: 20px
+				list-style: none
+				&:first-child
+					padding-left: 0
+				a
+					text-decoration: none
+					color: #000000
+					font-weight: bold
+			
+.phone-text
+	font-size: 12px
+	color: #cccccc
+
+.feedback
+	&-time
+		font-size: 12px
+		color: #cccccc
+		span
+			font-weight: bold
+			font-size: 14px
+			color: #000000

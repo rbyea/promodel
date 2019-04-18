@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<title>Promodel</title>
 </head>
 <body>
@@ -14,12 +15,40 @@
 					<div class="header-content__logo">
 						<img src="image/header/logo.jpg" alt="Логотип">
 					</div>
-					<div class="header-content__text"></div>
-					<div class="header-content__feedback"></div>
+					<div class="header-content__text">Традиционная надежность</div>
+					<div class="header-content__feedback">
+						<div class="header-content__feedback_phone">
+							<a href="#">8-800-550-70-08</a>
+							<div class="phone-text">
+								Бесплатный звонок по РФ
+							</div>
+							<a href="#">+7 (927) 366-11-11</a>
+							<div class="feedback-time">
+								Время работы: с <span>08:00</span> до <span>17:00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-navbar">
+					<ul>
+						<li><a href="#">Главное</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Галерея</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
 				</div>
 			</div>
+				<div class="header-video">
+					<div id="video-promo" style="width: 100%; height: 800px;" data-vide-bg="video/MVI_2228 (convert-video-online.com).mp4"
+						data-vide-options="loop: true, muted: true, position: 0% 0%">
+					</div>
+				</div>
 		</header>
 		<script src="js/common.js"></script>
 		<script src="libs/jquery/dist/jquery.min.js"></script>
+		<script src="libs/jquery.vide.min.js"></script>
+		<script>
+		 var instance = $('#promo-video').data('vide');
+		</script>
 </body>
 </html>
