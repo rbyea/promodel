@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   text-align: center;
 }
@@ -30,6 +30,15 @@ body {
   font-weight: bold;
   margin: 0;
   font-size: 30px;
+}
+
+.page-header {
+  padding: 2px 25px;
+  background-color: #8ba173;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'RobotoRegular', sans-serif;
+  font-weight: 400;
 }
 
 .about__text {
@@ -309,6 +318,70 @@ body {
   .team__title {
     font-size: 25px;
   }
+}
+
+.news .main-title {
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.news-list li {
+  margin-bottom: 20px;
+  text-align: left;
+  border-top: 1px solid #999;
+}
+
+.news-list li h2 {
+  margin-top: 0;
+  padding: 5px;
+  background: #a4b592;
+  text-align: center;
+}
+
+.news-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-img {
+  min-width: 300px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.news-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.news-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100%-330px);
+}
+
+.news-text p {
+  margin-top: 0;
+}
+
+.news-text span {
+  margin: auto 0 0 auto;
+  color: #b7b5b5;
 }
 
 .header {
