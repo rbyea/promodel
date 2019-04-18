@@ -22,11 +22,14 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main-title {
-  font-size: 30px;
   color: #393939;
+  font-weight: bold;
+  margin: 0;
+  font-size: 30px;
 }
 
 .about__text {
@@ -409,6 +412,7 @@ body {
 
 .better {
   padding-top: 50px;
+  background-color: whitesmoke;
   padding-bottom: 50px;
 }
 
@@ -425,6 +429,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 50px;
 }
 
 .better-content__box {
@@ -444,5 +449,46 @@ body {
   font-size: 14px;
   color: #7f7f7f;
   width: 265px;
+}
+
+.eff {
+  margin-bottom: 27px;
+}
+
+.base {
+  background-color: #8ba173;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.base-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.base-content__box {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.base-content__box_image {
+  font-size: 40px;
+}
+
+.base-content__box_title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
