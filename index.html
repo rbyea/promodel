@@ -1,21 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<title>Promodel</title>
 </head>
-<body>
-		<header>
-			<div class="logo">
-				<img src="image/header/logo.jpg" alt="Логотип">
 
-				<div>ААААААААААААААААААААААААААААА</div>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-content">
+				<div class="header-content__logo">
+					<img src="image/header/logo.jpg" alt="Логотип">
+				</div>
+				<div class="header-content__text">Традиционная надежность</div>
+				<div class="header-content__feedback">
+					<div class="header-content__feedback_phone">
+						<a href="#">8-800-550-70-08</a>
+						<div class="phone-text">
+							Бесплатный звонок по РФ
+						</div>
+						<a href="#">+7 (927) 366-11-11</a>
+						<div class="feedback-time">
+							Время работы: с <span>08:00</span> до <span>17:00</span>
+						</div>
+					</div>
+				</div>
 			</div>
-		</header>
-		<script src="js/common.js"></script>
-		<script src="libs/jquery/dist/jquery.min.js"></script>
+			<div class="header-navbar">
+				<ul>
+					<li><a href="#">Главное</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Галерея</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-video">
+			<div id="video-promo" style="width: 100%; height: 650px;"
+				data-vide-bg="video/MVI_2228 (convert-video-online.com).mp4"
+				data-vide-options="loop: true, muted: true, position: center">
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="better">
+			<div class="container">
+				<h1 class="main-title">
+					Почему стоит выбрать именно нас
+				</h1>
+				<div class="better-content">
+					<div class="better-content__box">
+						<div class="better-content__box_image">
+							<i class="fas fa-users"></i>
+						</div>
+						<h2 class="better-content__box_title">Команда</h2>
+						<div class="better-content__box_text">
+							Мы можем позволить себе максимально комфортный для клиента принцип ценообразования
+						</div>
+					</div>
+					<div class="better-content__box">
+						<div class="better-content__box_image">
+							<i class="far fa-star"></i>
+						</div>
+						<h2 class="better-content__box_title">Качество</h2>
+						<div class="better-content__box_text">100% качество выпускаемой продукции</div>
+					</div>
+					<div class="better-content__box">
+						<div class="better-content__box_image">
+							<i class="fab fa-teamspeak"></i>
+						</div>
+						<h2 class="better-content__box_title">Техническая консультация</h2>
+						<div class="better-content__box_text">Оказание бесплатных технических консультаций для клиентов в тех сферах, в которых мы компетентны</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="base">
+			<div class="container">
+				<h1 class="main-title">
+					Базовые принципы производств
+				</h1>
+				<div class="base-content">
+					<div class="base-content__box">
+						<div class="base-content__box_image">
+							<i class="fas fa-microchip"></i>
+						</div>
+						<h2 class="base-content__box_title">
+							Максимальная автоматизация производственного процесса
+						</h2>
+						<div class="bbase-content__box_sub">
+							Способствует созданию ритмичного производства с возможностью
+							точного планирования
+						</div>
+					</div>
+					<div class="base-content__box">
+						<div class="base-content__box_image">
+							<i class="fas fa-chart-line"></i>
+						</div>
+						<h2 class="base-content__box_title eff">Эффективная модернизация</h2>
+						<div class="bbase-content__box_sub">
+						 Направлена на выпуск продукции с улучшенными характеристиками, сокращение
+							длительности производственного цикла сокращение потерь и как следствие снижение себестоимости продукции
+						</div>
+					</div>
+					<div class="base-content__box">
+						<div class="base-content__box_image">
+							<i class="fas fa-medal"></i>
+						</div>
+						<h2 class="base-content__box_title eff">
+							Надежность
+						</h2>
+						<div class="bbase-content__box_sub">
+							Обеспечивает бесперебойное, согласованное взаимодействие всех производственных процессов</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="js/common.js"></script>
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/jquery.vide.min.js"></script>
+	<script>
+		var instance = $('#promo-video').data('vide');
+	</script>
 </body>
+
 </html>

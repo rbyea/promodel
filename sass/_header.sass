@@ -1,0 +1,58 @@
+.header
+	position: relative
+	&-video
+		z-index: 1
+		opacity: 0.7
+	&-content
+		position: absolute
+		display: flex
+		justify-content: space-between
+		align-items: center
+		z-index: 2
+		width: 1170px
+		color: #000000
+		top: 2%
+		&__text
+			font-size: 17px
+		&__feedback
+			&_phone
+				display: flex
+				flex-direction: column
+				align-items: center
+				a
+					color: $primery-color
+					font-weight: bold
+					font-size: 30px
+					text-decoration: none
+	&-navbar
+		position: absolute
+		z-index: 2
+		top: 16%
+		ul
+			display: flex
+			margin: 0
+			padding: 0
+			li
+				padding-left: 20px
+				list-style: none
+				&:first-child
+					padding-left: 0
+				a
+					text-decoration: none
+					color: #ffffff
+					font-weight: bold
+					&:hover
+						color: darken($primery-color, 20%)
+			
+.phone-text
+	font-size: 12px
+	color: #cccccc
+
+.feedback
+	&-time
+		font-size: 12px
+		color: #cccccc
+		span
+			font-weight: bold
+			font-size: 14px
+			color: #000000
