@@ -16,24 +16,53 @@
 				background: lighten($primery-color, 10)
 				text-align: center
 	&-wrap
-		display: flex
+		//display: flex
 	&-img
 		min-width: 300px
 		margin-right: 15px
 		margin-bottom: 5px
 		border-radius: 5px
 		overflow: hidden
+		float: left
 		img
 			max-width: 100%
 			height: auto
 	&-text
-		position: relative
-		display: flex
-		flex-direction: column
-		width: calc(100%-330px)
-		//max-width: 850px
+		text-align: justify
 		p
 			margin-top: 0
 		span
+			display: block
+			width: 100%
+			text-align: right
 			margin: auto 0 0 auto
 			color: $grey
+	.pagination
+		display: inline-flex
+		align-items: center
+		border: 1px solid #999999
+		border-radius: 3px
+		&-link
+			padding: 5px 10px
+			text-decoration: none
+		&-list
+			display: flex
+			margin: 0
+			padding: 0
+			list-style-type: none
+			li
+				&.current
+					padding: 5px 10px
+					border-left: 1px solid #999
+					cursor: pointer
+				a
+					display: block
+					padding: 5px 10px
+					border-left: 1px solid #999
+					text-decoration: none
+					transition: all 0.5s
+					&:hover
+						background: $primery-color
+						color: #000
+				&:last-child
+					border-right: 1px solid #999

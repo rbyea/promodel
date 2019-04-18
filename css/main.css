@@ -41,6 +41,24 @@ body {
   font-weight: 400;
 }
 
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+.breadcrumbs a:after {
+  content: '>>';
+  margin: 5px;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 .about__text {
   display: block;
   background-color: #8ba173;
@@ -344,18 +362,13 @@ body {
   text-align: center;
 }
 
-.news-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .news-img {
   min-width: 300px;
   margin-right: 15px;
   margin-bottom: 5px;
   border-radius: 5px;
   overflow: hidden;
+  float: left;
 }
 
 .news-img img {
@@ -364,15 +377,7 @@ body {
 }
 
 .news-text {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: calc(100%-330px);
+  text-align: justify;
 }
 
 .news-text p {
@@ -380,8 +385,60 @@ body {
 }
 
 .news-text span {
+  display: block;
+  width: 100%;
+  text-align: right;
   margin: auto 0 0 auto;
   color: #b7b5b5;
+}
+
+.news .pagination {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #999999;
+  border-radius: 3px;
+}
+
+.news .pagination-link {
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.news .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.news .pagination-list li.current {
+  padding: 5px 10px;
+  border-left: 1px solid #999;
+  cursor: pointer;
+}
+
+.news .pagination-list li a {
+  display: block;
+  padding: 5px 10px;
+  border-left: 1px solid #999;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.news .pagination-list li a:hover {
+  background: #8ba173;
+  color: #000;
+}
+
+.news .pagination-list li:last-child {
+  border-right: 1px solid #999;
 }
 
 .header {
@@ -563,5 +620,19 @@ body {
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .news .main-title {
+    padding: 25px 0;
+  }
+  .news-list li h2 {
+    font-size: 18px;
+  }
+  .news-img {
+    width: 300px;
+    float: none;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
