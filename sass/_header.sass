@@ -3,7 +3,6 @@
 	&-video
 		z-index: 1
 		opacity: 0.7
-		background-color: #000000
 	&-content
 		position: absolute
 		display: flex
@@ -12,6 +11,7 @@
 		z-index: 2
 		width: 1170px
 		color: #000000
+		top: 2%
 		&__text
 			font-size: 17px
 		&__feedback
@@ -27,7 +27,7 @@
 	&-navbar
 		position: absolute
 		z-index: 2
-		top: 12%
+		top: 16%
 		ul
 			display: flex
 			margin: 0
@@ -41,6 +41,8 @@
 					text-decoration: none
 					color: #ffffff
 					font-weight: bold
+					&:hover
+						color: darken($primery-color, 20%)
 			
 .phone-text
 	font-size: 12px
