@@ -567,7 +567,7 @@ body {
 }
 
 .better-content__box_image i {
-  font-size: 40px;
+  font-size: 150px;
   color: #8ba173;
 }
 
@@ -681,6 +681,10 @@ body {
   position: relative;
   padding-bottom: 675px;
   padding-top: 50px;
+}
+
+.methods-sub {
+  text-align: justify;
 }
 
 .middle {
@@ -848,6 +852,10 @@ body {
 
 .card-three {
   left: 67%;
+}
+
+.ml-three {
+  margin-bottom: 27px !important;
 }
 
 @media (max-width: 576px) {
