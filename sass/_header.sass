@@ -1,5 +1,6 @@
 .header
 	position: relative
+	background-color: #f5f5f5
 	&-video
 		z-index: 1
 		opacity: 0.7
@@ -8,12 +9,19 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		z-index: 2
+		z-index: 1
 		width: 1170px
 		color: #000000
 		top: 2%
+		.about__link
+			border: 2px solid $primery-color  !important
+			width: 200px
+			font-size: 16px
+			border: none
+			transition: all .5s ease
 		&__text
-			font-size: 17px
+			font-size: 20px
+			font-weight: bold
 		&__feedback
 			&_phone
 				display: flex
@@ -24,15 +32,30 @@
 					font-weight: bold
 					font-size: 30px
 					text-decoration: none
+			.about__link
+				margin-top: 10px
+				padding-top: 11px
+				cursor: pointer
+				outline: none
+				height: 50px
+				&:hover
+					background-color: lighten($primery-color, 15%)
 	&-navbar
 		position: absolute
 		z-index: 2
-		top: 16%
+		top: 20%
+		.dropdown
+			&-header
+				display: none !important
+				&-li
+					&:hover
+						display: block !important
 		ul
 			display: flex
 			margin: 0
 			padding: 0
 			li
+				font-size: 20px
 				padding-left: 20px
 				list-style: none
 				&:first-child
@@ -42,8 +65,8 @@
 					color: #ffffff
 					font-weight: bold
 					&:hover
-						color: darken($primery-color, 20%)
-			
+						color: darken($primery-color, 10%)
+
 .phone-text
 	font-size: 12px
 	color: #cccccc
@@ -56,3 +79,8 @@
 			font-weight: bold
 			font-size: 14px
 			color: #000000
+
+
+
+
+
