@@ -13,15 +13,9 @@
 		width: 1170px
 		color: #000000
 		top: 2%
-		.about__link
-			border: 2px solid $primery-color  !important
-			width: 200px
-			font-size: 16px
-			border: none
-			transition: all .5s ease
 		&__text
 			font-size: 20px
-			font-weight: bold
+			+bold
 		&__feedback
 			&_phone
 				display: flex
@@ -29,12 +23,16 @@
 				align-items: center
 				a
 					color: $primery-color
-					font-weight: bold
+					+bold
 					font-size: 30px
 					text-decoration: none
 			.about__link
+				width: 200px
+				font-size: 16px
+				border: none
+				transition: all .5s ease
 				margin-top: 10px
-				padding-top: 11px
+				padding-top: 9px
 				cursor: pointer
 				outline: none
 				height: 50px
@@ -43,15 +41,25 @@
 	&-navbar
 		position: absolute
 		z-index: 2
-		top: 20%
+		border:  2px solid #cccccc
+		background-color: $primery-color
+		top: 75.5%
+		height: 25px
+		padding: 5px 10px
+		border-radius: 10px
 		.dropdown
 			&-header
 				display: flex
 				flex-direction: column
-				transition: all 0.5s
+				transition: all 0.5s ease
 				opacity: 0
 				visibility: hidden
+				z-index: 3
+				margin-top: 10px
 				&-li
+					border-bottom: 2px solid $primery-color
+					text-align: left
+					padding: 0 0 5px 0
 		ul
 			display: flex
 			margin: 0
@@ -71,7 +79,7 @@
 					color: #ffffff
 					font-weight: bold
 					&:hover
-						color: darken($primery-color, 10%)
+						color: #000000
 
 .phone-text
 	font-size: 12px
@@ -86,7 +94,28 @@
 			font-size: 14px
 			color: #000000
 
+.wrapper
+	width: 100px
+	height: 100px
+	display: flex
+	position: absolute
+	top: 16px
+	left: 51px
 
+.star 
+	margin: auto
+	animation: light
+	animation-duration: 2s
+	animation-iteration-count: infinite
+	animation-timing-function: linear
+
+@keyframes light 
+	from, 31%
+		transform: scale(1,1) rotate(0)
+	15%
+		transform: scale(10,10) rotate(-45deg)
+	30%
+		transform: scale(1,1) rotate(-90deg)
 
 
 
