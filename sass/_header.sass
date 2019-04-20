@@ -46,10 +46,12 @@
 		top: 20%
 		.dropdown
 			&-header
-				display: none !important
+				display: flex
+				flex-direction: column
+				transition: all 0.5s
+				opacity: 0
+				visibility: hidden
 				&-li
-					&:hover
-						display: block !important
 		ul
 			display: flex
 			margin: 0
@@ -58,6 +60,10 @@
 				font-size: 20px
 				padding-left: 20px
 				list-style: none
+				&:hover
+					.dropdown-header
+						visibility: visible
+						opacity: 1
 				&:first-child
 					padding-left: 0
 				a
