@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/mmenu.css">
 
 	<link rel="stylesheet" href="css/hamburgers.css">
 	<title>Promodel</title>
@@ -65,19 +64,24 @@
 					</button>
 				</div>
 				<div class="header-navbar__mobile ">
-					<ul>
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">О компании</a>
-							<ul class="dropdown-header">
-								<li class="dropdown-header-li"><a href="#">Наша команда</a></li>
-								<li class="dropdown-header-li"><a href="#">Новости</a></li>
-								<li class="dropdown-header-li"><a href="#">Услуги</a></li>
-								<li class="dropdown-header-li"><a href="#">Наша продукция</a></li>
+					<div class="header-navbar__mobile_window">
+						<div class="header-navbar__mobile_close"><i class="fas fa-times"></i></div>
+						<div class="header-navbar__mobile_content">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О компании</a>
+									<ul class="dropdown-header">
+										<li class="dropdown-header-li"><a href="#">Наша команда</a></li>
+										<li class="dropdown-header-li"><a href="#">Новости</a></li>
+										<li class="dropdown-header-li"><a href="#">Услуги</a></li>
+										<li class="dropdown-header-li"><a href="#">Наша продукция</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Галерея</a></li>
+								<li><a href="#">Контакты</a></li>
 							</ul>
-						</li>
-						<li><a href="#">Галерея</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -413,19 +417,32 @@
 	</footer>
 
 
-	<script src="js/common.js"></script>
+	
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/jquery.vide.min.js"></script>
-	<script src="js/jquery.mhead.js"></script>
-	<script src="js/mmenu.js"></script>
+	<script src="js/common.js"></script>
+
 	<script>
 		var instance = $('#promo-video').data('vide');
 	</script>
+
 	<script>
 		$("#menu").click(function () {
+			$(".hum").toggleClass("is-active");
+		});
+	</script>
+	<script>
+		$('.hamburger').on('click', function () {
+			$('.header-navbar__mobile').toggleClass('header-menu_vis');
+		});
+		$('.header-navbar__mobile_close').on('click', function () {
+			$('.header-navbar__mobile').toggleClass('header-menu_vis');
+		});
+	</script>
+	<script>
+		$(".header-navbar__mobile_close").click(function () {
 				$(".hum").toggleClass("is-active");
 			});
-
 	</script>
 </body>
 
