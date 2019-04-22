@@ -565,7 +565,25 @@ body {
   margin-top: 33px;
   position: absolute;
   left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
+}
+
+.header-navbar__mobile_close .promodel {
+  margin-left: 30px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'RobotoBold', sans-serif;
+  font-weight: 700;
+}
+
+.header-navbar__mobile_close .promodel span {
+  color: #8ba173;
 }
 
 .header-navbar__mobile_close i {
@@ -575,6 +593,7 @@ body {
 
 .header-navbar__mobile_window {
   width: 333px;
+  margin-top: 77px;
 }
 
 .header-navbar__mobile_content ul {
@@ -943,6 +962,7 @@ body {
   cursor: pointer;
   width: 340px;
   height: 480px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card:hover > .front {
@@ -965,6 +985,7 @@ body {
   transition: -webkit-transform .6s linear;
   transition: transform .6s linear;
   transition: transform .6s linear, -webkit-transform .6s linear;
+  outline: none;
 }
 
 .front {
@@ -1366,7 +1387,7 @@ body {
 
 @media (max-width: 402px) {
   .header-menu_vis {
-    width: 64vh;
+    width: 64%;
   }
   ul.dropdown-header {
     padding-left: 16px;
