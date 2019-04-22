@@ -1240,6 +1240,12 @@ body {
   }
 }
 
+@media (max-width: 490px) {
+  .back {
+    margin-top: -125%;
+  }
+}
+
 @media (max-width: 478px) {
   .header-content__feedback {
     display: -webkit-box;
@@ -1274,9 +1280,6 @@ body {
   }
   .ml-three {
     margin-bottom: 12px !important;
-  }
-  .back {
-    margin-top: -153%;
   }
   .back-content__text-l {
     font-size: 13px;
