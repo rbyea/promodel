@@ -29,6 +29,7 @@ body {
   position: fixed;
   right: 5%;
   top: 70%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .scroll-window {
@@ -2024,6 +2025,10 @@ li.fancybox-thumbs-loading {
   margin-bottom: 10px;
   font-family: 'RobotoBold', sans-serif;
   font-weight: 700;
+}
+
+.modal-close {
+  cursor: pointer;
 }
 
 .modal-close i {

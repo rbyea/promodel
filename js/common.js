@@ -25,21 +25,7 @@ $(function() {
 				$('.modal').toggleClass('modal-vis');
 		});
 
-$("#back-top").hide();
-
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 100) {
-		$("#back-top").fadeIn();
-	} else {
-		$("#back-top").fadeOut();
-	}
-});
-
-$("#back-top i").click(function () {
-	$("html, body").animate({
-		scrollTop: 0
-	}, 800);
-	return false;
-
 		// gallery
-$('[data-fancybox]').fancybox();
+	$('[data-fancybox]').fancybox();
+
+});
