@@ -29,6 +29,7 @@
 	cursor: pointer
 	width: 340px
 	height: 480px
+	-webkit-tap-highlight-color: transparent
 	&:hover > .front
 		transform: perspective(600px) rotateY(-180deg)
 	&:hover > .back
@@ -42,6 +43,7 @@
 	overflow: hidden
 	backface-visibility: hidden
 	transition: transform .6s linear
+	outline: none
 
 .front
 	transform: perspective(600px) rotateY(0deg)

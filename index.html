@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/mmenu.css">
 
 	<link rel="stylesheet" href="css/hamburgers.css">
 	<title>Promodel</title>
@@ -38,7 +37,7 @@
 							Время работы: с <span>08:00</span> до <span>17:00</span>
 						</div>
 					</div>
-					<button class="about__link">
+					<button class="about__link" id="btn-head">
 						Задать вопрос
 					</button>
 				</div>
@@ -65,19 +64,24 @@
 					</button>
 				</div>
 				<div class="header-navbar__mobile ">
-					<ul>
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">О компании</a>
-							<ul class="dropdown-header">
-								<li class="dropdown-header-li"><a href="#">Наша команда</a></li>
-								<li class="dropdown-header-li"><a href="#">Новости</a></li>
-								<li class="dropdown-header-li"><a href="#">Услуги</a></li>
-								<li class="dropdown-header-li"><a href="#">Наша продукция</a></li>
+					<div class="header-navbar__mobile_window">
+						<div class="header-navbar__mobile_close"><i class="fas fa-times"></i><div class="promodel"><span>Про</span>Модель</div></div>
+						<div class="header-navbar__mobile_content">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О компании</a>
+									<ul class="dropdown-header">
+										<li class="dropdown-header-li"><a href="#">Наша команда</a></li>
+										<li class="dropdown-header-li"><a href="#">Новости</a></li>
+										<li class="dropdown-header-li"><a href="#">Услуги</a></li>
+										<li class="dropdown-header-li"><a href="#">Наша продукция</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Галерея</a></li>
+								<li><a href="#">Контакты</a></li>
 							</ul>
-						</li>
-						<li><a href="#">Галерея</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -412,21 +416,68 @@
 		</div>
 	</footer>
 
+	<div class="modal">
+		<div class="modal-window">
+			<div class="modal-close">
+				<i class="fas fa-times"></i>
+			</div>
+			<div class="modal-window__title">
+				Оставьте заявку и мы свяжимся с вами в ближайшее время!
+			</div>
+			<div class="modal-window__form">
+				<form class="form-content" action="">
+					<input type="text" name="name" class="modal-name" placeholder="Ваше Имя">
+					<input type="tel" name="phone" class="modal-phone" placeholder="Ваш телофон">
+					<input type="email" name="mail" class="modal-mail" placeholder="Ваша почта">
+					<input type="text" name="org" class="modal-org" placeholder="Ваша организация">
+					<textarea name="form-text" id="" cols="30" rows="3" placeholder="Введите сообщение"></textarea>
+					<label for="form-attachment">Прикрепить файл </label>
+					<input type="file" class="form-file" name="form-attachment" value="[[!+fi.contact_attachment]]" />
+					<button type="submit" class="button modal__button">Оставить заявку</button>
+				</form>
+				<div class="about-modall">
+					Нажимая на кнопку, вы принимаете  <a href="#">Положение</a> и <a href="#">Согласие</a> на обработку персональных данных.
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<script src="js/common.js"></script>
+	
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/jquery.vide.min.js"></script>
-	<script src="js/jquery.mhead.js"></script>
-	<script src="js/mmenu.js"></script>
+	<script src="js/common.js"></script>
+
 	<script>
 		var instance = $('#promo-video').data('vide');
 	</script>
+
 	<script>
 		$("#menu").click(function () {
+			$(".hum").toggleClass("is-active");
+		});
+	</script>
+	<script>
+		$('.hamburger').on('click', function () {
+			$('.header-navbar__mobile').toggleClass('header-menu_vis');
+		});
+		$('.header-navbar__mobile_close').on('click', function () {
+			$('.header-navbar__mobile').toggleClass('header-menu_vis');
+		});
+	</script>
+	<script>
+		$(".header-navbar__mobile_close").click(function () {
 				$(".hum").toggleClass("is-active");
 			});
-
 	</script>
+	<script>
+		$('#btn-head').on('click', function () {
+			$('.modal').toggleClass('modal-vis');
+		});
+		$('.modal-close').on('click', function () {
+				$('.modal').toggleClass('modal-vis');
+		});
+	</script>
+
 </body>
 
 </html>
