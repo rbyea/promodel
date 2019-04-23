@@ -9,6 +9,7 @@ $(function() {
 	$('.hamburger').on('click', function () {
 		$('.header-navbar__mobile').toggleClass('header-menu_vis');
 	});
+
 	$('.header-navbar__mobile_close').on('click', function () {
 		$('.header-navbar__mobile').toggleClass('header-menu_vis');
 	});
@@ -23,4 +24,7 @@ $(function() {
 		$('.modal-close').on('click', function () {
 				$('.modal').toggleClass('modal-vis');
 		});
+
+		// gallery
+		$('[data-fancybox]').fancybox();
 });
