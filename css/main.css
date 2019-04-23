@@ -25,6 +25,30 @@ body {
   text-align: center;
 }
 
+.scroll {
+  position: fixed;
+  right: 5%;
+  top: 70%;
+}
+
+.scroll-window {
+  width: 50px;
+  height: 50px;
+  background-color: #a4b592;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 .main-title {
   color: #393939;
   font-family: 'RobotoBold', sans-serif;
