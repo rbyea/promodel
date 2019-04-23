@@ -37,7 +37,7 @@
 							Время работы: с <span>08:00</span> до <span>17:00</span>
 						</div>
 					</div>
-					<button class="about__link">
+					<button class="about__link" id="btn-head">
 						Задать вопрос
 					</button>
 				</div>
@@ -416,6 +416,28 @@
 		</div>
 	</footer>
 
+	<div class="modal">
+		<div class="modal-window">
+			<div class="modal-close">
+				<i class="fas fa-times"></i>
+			</div>
+			<div class="modal-window__title">
+				Оставьте заявку и мы свяжимся с вами в ближайшее время!
+			</div>
+			<div class="modal-window__form">
+				<form class="form-content" action="">
+					<input type="text" name="name" class="modal-name" placeholder="Ваше Имя">
+					<input type="tel" name="phone" class="modal-phone" placeholder="Ваш телофон">
+					<input type="email" name="mail" class="modal-mail" placeholder="Ваша почта">
+					<input type="text" name="org" class="modal-org" placeholder="Ваша организация">
+					<textarea name="form-text" id="" cols="30" rows="10"></textarea>
+					<label for="form-attachment">Прикрепить файл </label>
+					<input type="file" class="form-file" name="form-attachment" value="[[!+fi.contact_attachment]]" />
+					<button type="submit" class="button modal__button">Оставить заявку</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	
 	<script src="libs/jquery/dist/jquery.min.js"></script>
@@ -444,6 +466,15 @@
 				$(".hum").toggleClass("is-active");
 			});
 	</script>
+	<script>
+		$('#btn-head').on('click', function () {
+			$('.modal').toggleClass('modal-vis');
+		});
+		$('.modal-close').on('click', function () {
+				$('.modal').toggleClass('modal-vis');
+		});
+	</script>
+
 </body>
 
 </html>

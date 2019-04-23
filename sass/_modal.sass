@@ -1,0 +1,39 @@
+.modal
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.52)
+	left: 0
+	top: 0
+	z-index: 3
+	display: none
+	&-vis
+		display: flex
+		align-items: center
+		justify-content: center
+	&-window
+		display: flex
+		flex-direction: column
+		background-color: #fff
+		padding: 10px
+		&__title
+			font-size: 25px
+			margin-bottom: 10px
+	&-close
+		i
+			font-size: 30px
+
+.form
+	&-content
+		display: flex
+		flex-direction: column
+		input
+			margin-bottom: 10px
+			border-radius: 10px
+			height: 35px
+			border: 1px solid #cccccc
+			padding-left: 10px
+	&-file
+		border-radius: 0px !important
+
+
