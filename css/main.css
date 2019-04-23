@@ -1458,6 +1458,9 @@ body {
   .header-content__logo img {
     width: 112px;
   }
+  .modal-window {
+    padding: 0;
+  }
   .modal-window__title {
     font-size: 16px;
   }
